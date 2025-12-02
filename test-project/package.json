@@ -1,0 +1,28 @@
+{
+  "name": "test-project",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": ">=18"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "frame-master": "^2.1.0",
+    "frame-master-plugin-apply-react": "^0.1.5",
+    "frame-master-plugin-markdown-to-jsx": "link:frame-master-plugin-markdown-to-jsx",
+    "frame-master-plugin-react-to-html": "^0.1.4",
+    "markdown-to-jsx": "^9.3.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development bun --hot frame-master dev",
+    "start": "NODE_ENV=production bun frame-master start",
+    "build": "NODE_ENV=production bun frame-master build",
+    "build:dev": "NODE_ENV=development bun frame-master build"
+  }
+}
