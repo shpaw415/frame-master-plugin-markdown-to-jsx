@@ -9,7 +9,6 @@
         "frame-master-plugin-apply-react": "^0.1.5",
         "frame-master-plugin-markdown-to-jsx": "link:frame-master-plugin-markdown-to-jsx",
         "frame-master-plugin-react-to-html": "^0.1.4",
-        "github-markdown-css": "^5.8.1",
         "markdown-to-jsx": "^9.3.0",
         "react": "^19.2.0",
         "react-dom": "^19.2.0",
@@ -51,8 +50,6 @@
     "frame-master-plugin-markdown-to-jsx": ["frame-master-plugin-markdown-to-jsx@link:frame-master-plugin-markdown-to-jsx", {}],
 
     "frame-master-plugin-react-to-html": ["frame-master-plugin-react-to-html@0.1.4", "", { "peerDependencies": { "frame-master": "^2.0.5", "react": ">=18.0.0 <20.0.0", "react-dom": ">=18.0.0 <20.0.0", "typescript": "^5" } }, "sha512-ki5QrfSMHPRj56GnTlnTxI6ma23rHdESUEJV5+w5rK4MDRsYOcJY9I2c1Gdny/zmG9PaXFLEC9cvvaEIFvGkVg=="],
-
-    "github-markdown-css": ["github-markdown-css@5.8.1", "", {}, "sha512-8G+PFvqigBQSWLQjyzgpa2ThD9bo7+kDsriUIidGcRhXgmcaAWUIpCZf8DavJgc+xifjbCG+GvMyWr0XMXmc7g=="],
 
     "kleur": ["kleur@3.0.3", "", {}, "sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w=="],
 

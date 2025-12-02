@@ -7,7 +7,7 @@ import {
   __toESM
 } from "./../node_modules/react/cjs/react.development.js";
 
-// __ORIGINAL__:/home/shpaw415/frame-master-plugins/markdown-to-jsx/test-project/src/_shell_.tsx
+// __ORIGINAL__:/home/shpaw415/frame-master-plugin/frame-master-plugin-markdown-to-jsx/test-project/src/_shell_.tsx
 var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
 function Shell({ children }) {
   return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("html", {
@@ -44,7 +44,7 @@ function MarkdownComponent(props) {
   }, undefined, false, undefined, this);
 }
 
-// __ORIGINAL__:/home/shpaw415/frame-master-plugins/markdown-to-jsx/test-project/src/_index_.tsx
+// __ORIGINAL__:/home/shpaw415/frame-master-plugin/frame-master-plugin-markdown-to-jsx/test-project/src/_index_.tsx
 var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
 function Page() {
   return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("div", {
@@ -61,5 +61,5 @@ export {
 
 export { client_routes_default };
 
-//# debugId=A40F75BEEF07FFD064756E2164756E21
+//# debugId=660EABB9F1694A3364756E2164756E21
 //# sourceMappingURL=./routes/client:routes.js.map

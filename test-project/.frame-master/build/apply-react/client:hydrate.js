@@ -15856,7 +15856,7 @@ var require_client = __commonJS((exports, module) => {
   }
 });
 
-// client-hydrate:/home/shpaw415/frame-master-plugins/markdown-to-jsx/test-project/node_modules/frame-master-plugin-apply-react/src/hydrate.tsx
+// client-hydrate:/home/shpaw415/frame-master-plugin/frame-master-plugin-markdown-to-jsx/test-project/node_modules/frame-master-plugin-apply-react/src/hydrate.tsx
 var import_react = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
@@ -15906,7 +15906,7 @@ function formatPathname(pathname) {
   return pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
 }
 
-// client-hydrate:/home/shpaw415/frame-master-plugins/markdown-to-jsx/test-project/node_modules/frame-master-plugin-apply-react/src/hydrate.tsx
+// client-hydrate:/home/shpaw415/frame-master-plugin/frame-master-plugin-markdown-to-jsx/test-project/node_modules/frame-master-plugin-apply-react/src/hydrate.tsx
 var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 document.addEventListener("DOMContentLoaded", async () => {
   const rootElement = document.getElementById("root");
@@ -15929,5 +15929,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-//# debugId=2B6748452FA2A56B64756E2164756E21
+//# debugId=5510A02A764CFA7864756E2164756E21
 //# sourceMappingURL=./apply-react/client:hydrate.js.map

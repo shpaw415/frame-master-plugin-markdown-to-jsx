@@ -92,6 +92,51 @@ function Page() {
 | `components`      | `MarkdownComponents` | Default component overrides for markdown elements.              |
 | `frontmatter`     | `boolean`            | Enable frontmatter parsing (default: `false`).                  |
 
+## Styling
+
+The plugin outputs HTML with the `markdown-body` wrapper class by default, making it compatible with GitHub-style markdown CSS. You can add styling using one of these options:
+
+### Option 1: CDN (Recommended for quick setup)
+
+Add to your HTML head:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css"
+/>
+```
+
+### Option 2: NPM Package
+
+```bash
+bun add github-markdown-css
+```
+
+Then import in your app:
+
+```typescript
+import "github-markdown-css/github-markdown.min.css";
+```
+
+### Option 3: Alternative Themes
+
+| Theme                    | CDN Link                                                                                         |
+| ------------------------ | ------------------------------------------------------------------------------------------------ |
+| GitHub Light             | `https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css` |
+| GitHub Dark              | `https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-dark.min.css`  |
+| GitHub Auto (Light/Dark) | `https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css`       |
+
+### Custom Wrapper Class
+
+If you prefer a different CSS framework or custom styles, change the wrapper class:
+
+```typescript
+markdownToJSX({
+  wrapper: "prose", // For Tailwind Typography
+});
+```
+
 ## TypeScript Support
 
 The plugin includes full TypeScript support. Import types as needed:
