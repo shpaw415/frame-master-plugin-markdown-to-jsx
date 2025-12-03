@@ -5,6 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { createElement } from "react";
 import { createStarryNight, common } from "@wooorm/starry-night";
 import { toHtml } from "hast-util-to-html";
+import { version, name } from "../package.json";
 
 export type {
   MarkdownToJSXOptions,
@@ -242,9 +243,8 @@ export default function markdownToJSX(
   };
 
   return {
-    name: "markdown-to-jsx",
-    version: "0.1.0",
-
+    name,
+    version,
     runtimePlugins: [markdownPlugin],
     build: {
       buildConfig: {

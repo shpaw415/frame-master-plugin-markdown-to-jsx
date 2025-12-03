@@ -85,12 +85,45 @@ function Page() {
 
 ## Configuration Options
 
-| Option            | Type                 | Description                                                     |
-| ----------------- | -------------------- | --------------------------------------------------------------- |
-| `wrapper`         | `string`             | CSS class for the wrapper element (default: `"markdown-body"`). |
-| `syntaxHighlight` | `object \| false`    | Syntax highlighting configuration.                              |
-| `components`      | `MarkdownComponents` | Default component overrides for markdown elements.              |
-| `frontmatter`     | `boolean`            | Enable frontmatter parsing (default: `false`).                  |
+| Option            | Type              | Description                                                     |
+| ----------------- | ----------------- | --------------------------------------------------------------- |
+| `wrapper`         | `string`          | CSS class for the wrapper element (default: `"markdown-body"`). |
+| `syntaxHighlight` | `object \| false` | Syntax highlighting config. Set to `false` to disable.          |
+| `frontmatter`     | `boolean`         | Enable frontmatter parsing (default: `false`).                  |
+
+## Syntax Highlighting
+
+Code blocks are automatically highlighted at build time using GitHub's syntax highlighting. To style the highlighted code, add the starry-night CSS to your project:
+
+### Option 1: Use CDN
+
+Add to your `head.html` or layout:
+
+```html
+<link rel="stylesheet" href="MarkdownStyle.css" />
+```
+
+### Option 2: Use github-markdown-css
+
+For full GitHub-style markdown (including code blocks):
+
+```bash
+bun add github-markdown-css
+```
+
+```tsx
+import "github-markdown-css/github-markdown.css";
+
+<Article className="markdown-body" />;
+```
+
+### Disable Syntax Highlighting
+
+```typescript
+markdownToJSX({
+  syntaxHighlight: false,
+});
+```
 
 ## TypeScript Support
 
@@ -108,13 +141,16 @@ import type {
 Add the following to your `.frame-master/frame-master-custom-type.d.ts` to enable TypeScript support for markdown imports:
 
 ```typescript
+import type { ComponentType } from "react";
+
 declare module "*.md" {
-  const MarkdownComponent: React.ComponentType<{
-    options?: Record<string, unknown>;
+  const MarkdownComponent: ComponentType<{
+    className?: string;
     [key: string]: unknown;
   }>;
   export default MarkdownComponent;
   export const markdown: string;
+  export const html: string;
   export const frontmatter: Record<string, unknown>;
 }
 ```
